@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Open Sans";
+}
+main{
+    height: 70vh;
+}
+footer.pie{
+    background: #212121;
+    padding: 100px 60px;
+}
+footer .contenedor{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .ftrs h3.tres{
+    font-size: 1.4em;
+    margin-bottom: 1.2em;
+    color: #fff;
+}
+footer .contenta{
+    list-style:none;
+}
+footer .contenta a{
+    text-decoration: none;
+    color: #fff;
+    opacity: .6;
+    line-height: 30px;
+    transition: .3s ease opacity;
+}
+footer .contenta a:hover{
+    opacity: 1;
+}
+footer .ftrs{
+    flex-basis: 18%;
+}
+form{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+input.imput{
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin: 5px 0;
+    background: #f5f5f5;
+}
+.btn input.imput{
+    background: blueviolet;
+    color: #fff;
+    transition: .3s ease background;
+}
+.btn input.imput:hover{
+    background: #000;
+}
+@media only screen and (max-width: 540px){
+    footer .ftr{
+        flex-basis: 80%;
+        margin: 0 auto;
+    }
+    form{
+        flex-direction: column;
+    }
+    form input.imput{
+        width: 90%;
+        margin: 5px auto;
+    }
+} 
